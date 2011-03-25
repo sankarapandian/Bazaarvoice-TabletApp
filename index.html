@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>iPad Reviews</title>
+
+    <link rel="stylesheet" href="css/sencha-touch.css" type="text/css">
+    <script type="text/javascript" src="js/sencha-touch.js"></script>
+
+    <link rel="stylesheet" href="css/ipad-app.css" type="text/css">
+    <script type="text/javascript" src="js/ipad-app.js"></script>
+
+</head>
+<body>
+
+<textarea id="product" class="x-hidden-display">
+    <tpl for=".">
+			<div class='list_item product'>
+				<div class="productphoto"><img src='{Picture}' class=left_photo onerror="this.style.display = 'none';"/></div>
+				<div class="productinfo">
+    				<h3>{Name}</h3>
+    				<p><span class="rating"><span class="ratingHighlight" style="width:{RatingPercent}%"></span></span></p>
+    				<p class="reviewcount">Total Reviews: {ReviewCount}</p>
+    			</div>
+			</div>
+    </tpl>
+</textarea>
+	
+<textarea id="review" class="x-hidden-display">
+	<tpl for=".">
+		<div class='list_item review'>
+			<p class="rating_summary"><span class="rating_prefix">Rating:</span> <span class="rating_sm"><span class="ratingHighlight" style="width:{RatingPercent}%"></span></span></p>
+			<h3>{Title}</h3>
+			<p class="author"><span class="author_prefix">by</span> <span class="author_name">{Author_DisplayName}</span></p>
+			<p class=review_text>{Text}</p>
+		</div>
+	</tpl>
+</textarea>	
+
+<textarea id="single_product_template" class="x-hidden-display">
+    <tpl for=".">
+			<div class=single_product>
+				<img src='{Picture}' class=left_photo onerror="this.style.display = 'none';"/>
+				<h3>{Name}</h3>
+				<p><span class="rating"><span class="ratingHighlight" style="width:{RatingPercent}%"></span></span></p>
+				<p class="reviewcount">Total Reviews: {ReviewCount}</p>
+				<p class=description>{Attributes.DESCRIPTION}</p>
+			</div>
+    </tpl>
+</textarea>
+	
+<textarea id="single_brand_template" class="x-hidden-display">
+    <tpl for=".">
+			<div class="single_brand">
+				<h3>{name}</h3>
+			</div>
+    </tpl>
+</textarea>	
+	
+</body>
+</html>

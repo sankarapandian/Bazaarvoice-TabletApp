@@ -1,0 +1,8 @@
+HTML5 Mobile Application using Sencha Touch and Bazaarvoice API
+
+Instructions to get up and running:
+
+1.  Modify js/ipad-app.js to include your API key on line 51.
+2.  Also add your company name on line 52.
+3.  Load index.html in a Webkit browser or mobile device
+
