@@ -159,7 +159,7 @@ Ext.setup({
             productDisplay.store.loadData([]);            
             panel.setLoading(true);
             Ext.util.JSONP.request({
-                url: 'http://api.bazaarvoice.com/api/product.json',
+                url: 'http://api.bazaarvoice.com/data/0001/products.json',
                 callbackKey: 'callback',
                 params: {                    
                     key: key,
@@ -178,7 +178,7 @@ Ext.setup({
             reviewDisplay.store.data.clear();
             panel.setLoading(true);
             Ext.util.JSONP.request({
-                url: 'http://api.bazaarvoice.com/api/review.json',
+                url: 'http://api.bazaarvoice.com/data/0001/reviews.json',
                 callbackKey: 'callback',
                 params: {                    
                     key: key,
