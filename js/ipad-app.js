@@ -66,7 +66,7 @@ Ext.setup({
     onReady: function() {
         
         var key = "YOUR_API_KEY";
-        var current_brand = {name: 'YOUR_COMPANY_NAME'}; 
+        var current_brand = {name: 'Nathan Research'}; 
         
         var productData = new Ext.data.Store({
             id: 'productData', 
